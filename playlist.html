@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel ="stylesheet" href="list.css">
+</head>
+<body>
+	
+
+<div class="searchbox">
+<div class="container">
+<div class="welcome"> <h1> Listen to something new!</h1>
+					</div>
+<div class="row">
+  
+  <div class="col-lg-12">
+    <div class="input-group">
+      <input id="searchgenre" type="text" placeholder="Enter keyword here" class="form-control">
+      <span class="input-group-btn">
+        <button id="search" type="button" class="btn btn-success">Search</button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+</div>
+</div>
+	
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>	
+	<script>
+	function runScript(e){
+		if(e.keyCode === 13){
+			getGenre(tag);
+			console.log("clicked")
+		}
+	}
+
+	$("#search").click(function(){
+        var txt = $("#searchgenre").val()
+   		console.log(txt);
+   		getGenre(txt);
+    }); 
+
+var getGenre = function(tag){
+	$.get("https://api.spotify.com/v1/search?type=track&limit=10&q=" + tag, function(data){
+console.log(data);
+
+	});
+
+
+}
+
+
+	</script>
+</body>
+</html>
