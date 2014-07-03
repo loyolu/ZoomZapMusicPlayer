@@ -24,7 +24,7 @@
 <div class="searchbox">
 <div class="row">
   
-  <div class="col-lg-12">
+  <div class="col-lg-8 col-lg-offset-2" >
     <div class="input-group">
       <input id="searchgenre" type="text" placeholder="Enter keyword here" class="form-control">
       <span class="input-group-btn">
@@ -51,39 +51,10 @@
 </table></div></div></div></div>
 	</div>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>	
-	<script>
-	function runScript(e){
-		if(e.keyCode === 13){
-			getGenre(tag);
-			console.log("clicked")
-		}
-	}
-
-	$("#search").click(function(){
-        var txt = $("#searchgenre").val()
-   		console.log(txt);
-   		getGenre(txt);
-    }); 
-
-var getGenre = function(tag){
-	$.get("https://api.spotify.com/v1/search?type=track&limit=10&q=" + tag, function(data){
-		console.log(data);
-	$.each(data.tracks.items, function(index,value){
-		$("#table_div").append("<tr><td class='trackcol'>" + value.name + "</td>" + "<td>" + value.artists[0].name + "</td>"+ "<td class='albumcol'>" + value.album.name + "</td></tr>");
-
-		console.log(value.artists[0].name);
-		console.log(value.album.name);
-		console.log(value.name);
-
-	});
+	<script src="searching.js"></script>
 
 
-	});
 
-
-}
-
-
-	</script>
+	
 </body>
 </html>
