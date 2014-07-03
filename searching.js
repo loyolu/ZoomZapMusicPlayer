@@ -36,6 +36,7 @@ var getGenre = function(tag){
 		$("iframe").attr("src", "https://embed.spotify.com/?uri=" + $(this).attr("data-songuri"));
 		console.log("play was clicked");
 		$("iframe").show();
+		$(".begin").hide();
 	});
 	});
 }

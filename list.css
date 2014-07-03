@@ -85,6 +85,9 @@ th{
 	width: 400px;
 }
 
-#document {
-	margin-left: 250px;
+iframe {
+	margin-top: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 50px;
 }
