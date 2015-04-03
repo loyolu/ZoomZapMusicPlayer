@@ -1,8 +1,6 @@
 html,body{
 	height: 100%;
 	background-color: #8e9292;
-	
-
 }
 
 .kitty{
@@ -18,13 +16,10 @@ html,body{
 	text-align: center;
 	font-family: futura;
 	color: #5c1f00;
-	
 }
 
 .searchbox{
 	padding-top: 20px;
-	/*-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);*/
 }
 
 .btn-danger{
@@ -63,12 +58,11 @@ html,body{
 }
 
 .songtable{
-padding-top: 20px;
+	padding-top: 20px;
 }
 
 tbody{
-background-color: white;
-		
+	background-color: white;
 }
 
 th{
