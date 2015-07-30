@@ -23,38 +23,13 @@ html,body{
 }
 
 .btn-danger{
-	background-color: hsl(351, 100%, 30%) !important;
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#995c00", endColorstr="#995c00");
-  background-image: -khtml-gradient(linear, left top, left bottom, from(#995c00), to(#995c00));
-  background-image: -moz-linear-gradient(top, #995c00, #995c00);
-  background-image: -ms-linear-gradient(top, #995c00, #995c00);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #995c00), color-stop(100%, ##995c00));
-  background-image: -webkit-linear-gradient(top, #995c00, #995c00);
-  background-image: -o-linear-gradient(top, #995c00, #995c00);
-  background-image: linear-gradient(#995c00, #995c00);
-  border-color: #995c00 #995c00 hsl(351, 100%, 30%);
-  text-shadow: 0 -1px 0 rgb(0, 0, 0);
-  -webkit-font-smoothing: antialiased;
-	background-color: #995c00;
+	background-color: #995c00 !important;
+  	background-image: none !important;
 }
 
 .btn-danger:hover{
-	background-color: hsl(351, 100%, 30%) !important;
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#995c00", endColorstr="#995c00");
-  background-image: -khtml-gradient(linear, left top, left bottom, from(#995c00), to(#995c00));
-  background-image: -moz-linear-gradient(top, #995c00, #995c00);
-  background-image: -ms-linear-gradient(top, #995c00, #995c00);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #995c00), color-stop(100%, ##995c00));
-  background-image: -webkit-linear-gradient(top, #995c00, #995c00);
-  background-image: -o-linear-gradient(top, #995c00, #995c00);
-  background-image: linear-gradient(#995c00, #995c00);
-  border-color: #995c00 #995c00 hsl(351, 100%, 30%);
-  text-shadow: 0 -1px 0 rgb(0, 0, 0);
-  -webkit-font-smoothing: antialiased;
-	background-color: #995c00;
-	background-position: 0 0;
+	background-color: #995c00 !important;
+  	background-image: none !important;
 }
 
 .songtable{
